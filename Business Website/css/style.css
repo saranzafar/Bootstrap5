@@ -71,6 +71,11 @@ a {
 }
 
 /* navbar style  */
+.navbar {
+    border-radius: 0px 0px 4rem 4rem;
+    box-shadow: 0px 0px 2px var(--bs-primary-color);
+}
+
 .nav-link {
     color: var(--bs-primary-color);
     font-weight: bold;
@@ -90,7 +95,7 @@ a {
 }
 
 .bg-main {
-    height: 80vh;
+    height: 110vh;
     position: relative;
 }
 
@@ -141,7 +146,7 @@ a {
 
 /* service section  */
 .service-section {
-    padding: 6rem 0 3rem 0 !important;
+    padding: 6rem 0 3rem 0;
 }
 
 .icon-span {
@@ -172,7 +177,8 @@ a {
 }
 
 .more-info-section .img-section img {
-    width: 70%;
+    width: 90%;
+    margin: auto;
 }
 
 /* online mode styling  */
@@ -507,21 +513,10 @@ a {
 
 /* responsiveness  */
 
-@media screen and (max-width:1200px) {
-    .hero-video--section {
-        width: 16rem;
-        border-radius: 1rem;
-    }
-}
 
 @media screen and (max-width:998px) {
     .navbar-toggler {
-        border-color: var(--bs-main-color);
-    }
-
-    .navbar-toggler-icon {
-        border-color: var(--bs-main-color);
-        background-color: var(--bs-main-color);
+        color: var(--bs-main-color);
     }
 
     h1 {
@@ -537,6 +532,32 @@ a {
     }
 
     .hero-section {
-        height: 100vh;
+        height: 120vh;
+        margin-top: 3rem;
+    }
+
+    .hero-video--section {
+        width: 16rem;
+        border-radius: 1rem;
+    }
+
+    .service-section {
+        padding: 3rem 0 0rem 0;
+    }
+
+    .contact-section .form-section {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .hero-video--section {
+        width: 13rem;
+        /* margin-top: 0; */
+    }
+
+    .hero-section {
+        height: 138vh;
+        margin-top: 0;
     }
 }
