@@ -591,29 +591,31 @@
         </div>
         <div class="container">
             <div class="form-section mx-auto">
-                <form>
+                <form action="https://formsubmit.co/saranzafar736@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
                     <div class="mb-3">
                         <div class="row">
                             <div class="col-lg-6 col-12 ">
                                 <label for="exampleFormUserFirstName" class="form-label">First Name</label>
-                                <input type="email" class="form-control" id="exampleFormUserFirstName"
-                                    placeholder="First Name">
+                                <input type="text" name="fname" class="form-control" id="exampleFormUserFirstName"
+                                    placeholder="First Name" required>
                             </div>
                             <div class="col-lg-6 col-12 ">
                                 <label for="exampleFormUserLastName" class="form-label">Last Name</label>
-                                <input type="email" class="form-control" id="exampleFormUserLastName"
+                                <input type="text" name="lname" class="form-control" id="exampleFormUserLastName"
                                     placeholder="Last Name">
                             </div>
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com">
+                        <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com" required>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"
+                            required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
